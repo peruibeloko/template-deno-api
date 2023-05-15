@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --watch=/src ./src/main.ts"
+  },
+  "imports": {
+    "h/": "./src/handlers/",
+    "c/": "./src/clients/",
+    "m": "./src/middlewares/middlewares.ts",
+    "oak": "https://deno.land/x/oak/mod.ts",
+    "oak/": "https://deno.land/x/oak/"
+  },
+  "fmt": {
+    "options": {
+      "singleQuote": true,
+      "lineWidth": 100
+    }
+  }
+}
