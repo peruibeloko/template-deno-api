@@ -1,3 +1,3 @@
-# Template Repo for Deno (Oak)
+# Template Repo for Deno REST APIs
 
-This exposes a very simple `/status/:number` endpoint which returns the desired status code. It uses the [httpstat.us](http://httpstat.us/) website for requests
+This exposes a very simple `/status/:number` endpoint on port 8080 which returns the text for the provided status code. It uses [httpstat.us](http://httpstat.us/) as the source of status code info and [Hono](https://hono.dev/) as the framework.
