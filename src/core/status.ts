@@ -1,5 +1,6 @@
-import * as Status from '@/clients/StatusClient.ts';
-import { Handler } from 'hono/mod.ts';
+import { Handler } from 'hono';
+
+import * as Status from '@/external/httpstatus.ts';
 
 export const getStatus: Handler = async c => {
   const status = c.get('status');

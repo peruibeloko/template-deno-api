@@ -1,4 +1,4 @@
-import { Handler } from 'hono/mod.ts';
+import { Handler } from 'hono';
 
 export const parseStatus: Handler = async (c, next) => {
   const status = c.req.param('status');

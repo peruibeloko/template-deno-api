@@ -1,8 +1,8 @@
-import { Hono } from 'hono/mod.ts';
+import { Hono } from 'hono';
 
-import { parseStatus } from '@/middlewares/parseStatus.ts';
+import { parseStatus } from '@/middlewares/status.ts';
 
-import * as handlers from '@/services/status.ts';
+import * as handlers from '@/core/status.ts';
 
 const status = new Hono<{
   Variables: {
